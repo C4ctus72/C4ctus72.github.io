@@ -1,0 +1,23 @@
+body {background-color: #281B21;}
+.icons{width: 100px; height: 100px;}
+.specialtext{font-family: Courier; color: white;}
+.ptext{font-family: monospace; color: white;}
+#secret{color: #281B21;}
+#Überschrift{font-size: 100px; text-align: center;}
+#paragraph-txt{
+    font-size: 20px;
+    text-align: left;
+    margin: 30%;
+    margin-top: 0;
+    margin-bottom: 0;}
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;}
+#Subtext{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    opacity: 10%;
+    margin: 30%;
+    margin-top: 0;
+    margin-bottom: 0;}

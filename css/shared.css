@@ -1,20 +1,8 @@
-body {
-    background-image: linear-gradient(black, rgb(28,40,65)); 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-}
 .container{
     margin: 0px;
     display: flex;
     justify-content: space-evenly;
-
 }
 
-h1{
-    font-family: 'Courier New', 'Courier', 'monospace';
-    color: azure;
-
-}
+h1 h2{color: white; font-size: xx-large; font-family: 'Courier New', Courier, monospace;}
+p, a{font-family: sans-serif; color: white; font-size: x-large; text-decoration: none;}

@@ -1,23 +1,200 @@
-body {background-color: #281B21;}
-.icons{width: 100px; height: 100px;}
-.specialtext{font-family: Courier; color: white;}
-.ptext{font-family: monospace; color: white;}
-#secret{color: #281B21;}
-#Überschrift{font-size: 100px; text-align: center;}
-#paragraph-txt{
-    font-size: 20px;
-    text-align: left;
-    margin: 30%;
-    margin-top: 0;
-    margin-bottom: 0;}
-#socials-container {
+:root{
+    --height: auto;
+    --shadow: calc(var(--height) /2);
+    --bordercolorheader: rgb(100,149,237);
+    --bordercolortext:rgb(147,112,219);
+    --bordercolormedia:rgb(255,99,71);
+    --bordercoloryellow: rgb(255,255,102);
+    --bordercolornav: rgb(255, 255, 255);
+    --shadowcolornav: inset 0px 50px 20px 0px rgb(255, 255, 255, 0.5);
+    --shadowcolorheader: inset 0px -50px 20px 0px rgba(100,149,237,0.5);
+    --shadowcolortext: inset 0px -50px 20px 0px rgba(194, 85, 233, 0.5);
+    --shadowcolormedia: inset 0px -50px 20px 0px rgba(255,99,71, 0.5);
+    --shadowcoloryellow: inset 0px -50px 20px 0px rgba(253,253,150, 0.5);
+    --imgdiv: 50vw;
+    --imgdivh: 50vh;
+    
+}
+
+/*1735px*/
+
+
+body {
+    
+    background-image: linear-gradient(black, rgb(28,40,65)); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
     display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 12vw;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+h1, h2{color: white; font-size: xx-large; font-family: 'Courier New', Courier, monospace;}
+p, a{font-family: sans-serif; color: white; font-size: x-large; text-decoration: none;}
+
+.container{
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+nav{
+    border-style: solid;
+    border-color: var(--bordercolornav);
+}
+nav:hover{
+    box-shadow: var(--shadowcolornav);
+    transition: .3s ease all;
+}
+header{
+    border-style: solid;
+    border-radius: 8px;
+    border-color: var(--bordercolortheader);
+    background-color: rgba(93, 0, 255, 0.058);    
+    display: flex;
+    flex-wrap: wrap;
+    height: var(--height);
+    box-shadow: 0 var(--shadow) 0 var(--shadowcolorheader);
+}
+
+footer{
+    background-color: black;
+    border-style: solid;
+    border-color: var(--bordercolornav);
+    margin: 0px;
+    padding: 0.5cm;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer:hover{
+    box-shadow: inset 0px -25px 20px 0px rgb(255, 255, 255, 0.5);
+    transition: .3s ease all;
+    
+}
+
+#logo{
+    width: 200px;
+}
+
+
+
+
+
+/* Boxes */
+
+#header{
+    border-style: solid;
+    border-radius: 8px;
+    border-color: var(--bordercolorheader);
+    background-color: rgba(93, 0, 255, 0.058);    
+    box-shadow: 0 var(--shadow) 0 var(--shadowcolorheader);
+}
+
+#imagediv{
+    border-style: solid;
+
+    flex-wrap: wrap;
+}
+
+#text{
+    border-style: solid;
+    border-radius: 8px;
+    border-color: var(--bordercolortext);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#media{
+    border-style: solid;
+    border-radius: 8px;
+    border-color: var(--bordercolormedia);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: visible;
+}
+    
+#mediatext{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 5%;}
-#Subtext{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    opacity: 10%;
-    margin: 30%;
-    margin-top: 0;
-    margin-bottom: 0;}
+}
+#mediaembets{
+    display: flex;
+    margin: 0%;
+    width: 33cm;
+}
+
+#yellow{
+    border-style: solid;
+    border-radius: 8px;
+    border-color: var(--bordercoloryellow);}
+
+
+
+
+/* Hover */
+
+header:hover{
+    box-shadow: var(--bordercolorheader);
+    transition: all .3s;
+}
+
+#header:hover{
+    box-shadow:var(--shadowcolorheader);
+    transition: all .3s;
+}
+
+#text:hover{box-shadow: var(--shadowcolortext); transition: .3s ease all;}
+
+#media:hover{
+    /*box-shadow: var(--shadowcolormedia);*/
+    box-shadow: var(--shadowcolormedia);
+    transition: .3s ease all;
+}
+
+#yellow:hover{
+    box-shadow: var(--shadowcoloryellow);
+    transition: .2s ease all;}
+        
+
+
+
+
+
+
+
+/* MEDIAQ */
+
+/* /* @media all and (min-width: 320px){
+    .contimg{
+        width: 200px;
+        height: 300px;
+    }
+
+} */
+
+@media all and (max-width: 1737px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #mediaembets{
+        flex-direction: column;
+    }
+    #imagediv{
+        flex-direction: column;
+    }
+    .embet{
+        align-self: center;
+    }
+    #yellow{
+        flex-direction: column;
+    }
+
+}
+
