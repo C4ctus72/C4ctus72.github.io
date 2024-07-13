@@ -21,7 +21,7 @@
 
 body {
     
-    background-image: linear-gradient(black, rgb(28,40,65)); 
+    background-image: linear-gradient(rgb(96,97,97), rgb(28,40,65)); 
     background-repeat: no-repeat; 
     background-attachment: fixed;
     display: flex;
