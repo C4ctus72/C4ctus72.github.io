@@ -37,7 +37,8 @@ h1, h2{color: white; font-size: xx-large; font-family: 'Courier New', Courier, m
 p, a{font-family: sans-serif; color: white; font-size: x-large; text-decoration: none;}
 
 #logo{
-    border-style: none;
+    border-style:solid;
+    border-color: black;
     border-radius: 5px;
 }
 
