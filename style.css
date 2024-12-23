@@ -50,4 +50,7 @@ a{
         border-right: 0px;
         font-size: 25px;
     }
+    h1 p{
+        margin: 5px;
+    }        
 }
