@@ -1,21 +1,12 @@
 console.log("Initializing...");
 console.log("Ready!");
 function GetGermanyTime() {
-    const TimeInGermany = new Date();
-    const GermanyHours = TimeInGermany.getHours();
-    const GermanyMinutes = TimeInGermany.getMinutes();
-    const GermanySeconds = TimeInGermany.getSeconds();
-    document.getElementById("GermanyHours").textContent = GermanyHours;
-    document.getElementById("GermanyMinutes").textContent = GermanyMinutes;
-    document.getElementById("GermanySeconds").textContent = GermanySeconds;
+    const TimeInGerman = new Date;
+    const HoursInGermany = TimeInGerman.getHours().toString().padStart(2, 0);
+    const MinutesInGermany = TimeInGerman.getMinutes().toString().padStart(2, 0);
+    const SecondsInGermany = TimeInGerman.getSeconds().toString().padStart(2, 0);
+    Time = HoursInGermany + ":" + MinutesInGermany + ":" + SecondsInGermany;
+    document.getElementById("CurrentTimeGermany").textContent = Time;
 }
-function GetJapanTime(){
-    const TimeInJapan = new Date;
-    
-}
-
-
-
-
 GetGermanyTime();
-setInterval(GetGermanyTime, 1000)
+setInterval(GetGermanyTime, 1000);
