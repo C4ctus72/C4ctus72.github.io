@@ -1,0 +1,25 @@
+html{
+    background-color: rgb(33, 33, 33);
+    font-family: sans-serif;
+    color: white;
+}
+.Germany{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+p{
+    display: inline;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.flag{
+    width: 100px;
+    margin-bottom: 10px;
+}
