@@ -3,13 +3,9 @@ html{
     font-family: sans-serif;
     color: white;
 }
-body{
-    align-items: center;
-    justify-content: center;
-}
 header{
-    display: flex;
     margin-top: 2.5%;
+    display: flex;
     justify-content: space-evenly;
 }
 .Time{
