@@ -7,6 +7,13 @@ function GetGermanyTime() {
     const SecondsInGermany = TimeInGerman.getSeconds().toString().padStart(2, 0);
     Time = HoursInGermany + ":" + MinutesInGermany + ":" + SecondsInGermany;
     document.getElementById("CurrentTimeGermany").textContent = Time;
-}
+};
+function GetJapanTime(){
+    const TimeInJapan = new Date;
+    document.getElementById("CurrentTimeJapan").textContent;
+};
+
+
 GetGermanyTime();
+GetJapanTime();
 setInterval(GetGermanyTime, 1000);

@@ -3,28 +3,21 @@ html{
     font-family: sans-serif;
     color: white;
 }
-.Germany{
+body{
+    align-items: center;
+    justify-content: center;
+}
+header{
+    display: flex;
+    margin-top: 2.5%;
+    justify-content: space-evenly;
+}
+.Time{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
 }
-p{
-    display: inline;
-}
-
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.flag{
-    width: 100px;
-    margin-bottom: 10px;
-}
-a{
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
+p{display: inline;}
+.flag{width: 100px;}
+#flag-japan{width: 90px;}
