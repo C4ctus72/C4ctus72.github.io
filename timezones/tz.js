@@ -1,3 +1,5 @@
+// https://stackoverflow.com/questions/10087819/convert-date-to-another-timezone-in-javascript
+
 function convertTZ(date, tzString) {
     return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));   
 }
@@ -12,7 +14,3 @@ convertedDate.getHours(); // 17
 // Bonus: You can also put Date object to first arg
 const date = new Date()
 convertTZ(date, "Asia/Jakarta") // current date-time in jakarta.
-
-
-
-// https://stackoverflow.com/questions/10087819/convert-date-to-another-timezone-in-javascript
