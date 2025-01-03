@@ -1,5 +1,6 @@
 console.log("Initializing...");
 console.log("Ready!");
+
 function GetGermanyTime() {
     const TimeInGerman = new Date;
     const HoursInGermany = TimeInGerman.getHours().toString().padStart(2, 0);
@@ -10,10 +11,14 @@ function GetGermanyTime() {
 };
 function GetJapanTime(){
     const TimeInJapan = new Date;
-    document.getElementById("CurrentTimeJapan").textContent;
+    const HoursInJapan = TimeInJapan.getHours().toString().padStart(2, 0);
+    const MinutesInJapan = TimeInJapan.getMinutes().toString().padStart(2, 0);
+    const SecondsInJapan = TimeInJapan.getSeconds().toString().padStart(2, 0);
+    Time = HoursInJapan + ":" + MinutesInJapan + ":" + SecondsInJapan;
+    document.getElementById("CurrentTimeJapan").textContent = Time;
 };
 
 
 GetGermanyTime();
 GetJapanTime();
-setInterval(GetGermanyTime, 1000);
+setInterval(GetGermanyTime, GetJapanTime, 1000);
