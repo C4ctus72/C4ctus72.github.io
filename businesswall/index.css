@@ -15,5 +15,5 @@ header{
     align-items: center;
 }
 p{display: inline;}
-.flag{width: 100px;}
+.flag{width: 100px; -webkit-user-drag: none;}
 #flag-japan{width: 90px;}
