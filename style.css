@@ -5,12 +5,12 @@
 }
 html{
     height: 100vh;
-}
-body{
     background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDA4bmx6M3MwemZoZGVhOWdxN3JtZXU0Nm02ejYzcjFrMmRiM3NyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PCbbTEkATqZM4xYanM/giphy.webp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+}
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
