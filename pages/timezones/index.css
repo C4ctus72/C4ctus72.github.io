@@ -17,3 +17,10 @@ header{
 p{display: inline;}
 .flag{width: 100px; -webkit-user-drag: none;}
 #flag-japan{width: 90px;}
+
+@media screen and (max-width: 400px){
+    header{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+}

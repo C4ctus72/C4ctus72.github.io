@@ -1,6 +1,5 @@
 console.log("Initializing...");
 console.log("Ready!");
-
 function TimeGrabber(Time){
     const Hours = Time.getHours().toString().padStart(2, 0);
     const Minutes = Time.getMinutes().toString().padStart(2, 0);
