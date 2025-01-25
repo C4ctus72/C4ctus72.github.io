@@ -15,7 +15,13 @@ function GetJapanTime(){
     const TimeInJapan = new Date;
     document.getElementById("CurrentTimeJapan").textContent = TimeGrabber(TimeInJapan);
 };
+function GetUTCTime(){
+    let TimeUTC = new Date;
+    document.getElementById("CurrentTimeUTC").textContent = TimeGrabber(TimeUTC);
+}
 GetGermanyTime();
 GetJapanTime();
+GetUTCTime();
 setInterval(GetGermanyTime, 1000);
 setInterval(GetJapanTime, 1000);
+setIntetval(GetUTCTime, 1000);
