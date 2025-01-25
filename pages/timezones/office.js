@@ -1,5 +1,7 @@
 console.log("Initializing...");
 console.log("Ready!");
+
+// Print time on screen
 function TimeGrabber(Time){
     const Hours = Time.getHours().toString().padStart(2, 0);
     const Minutes = Time.getMinutes().toString().padStart(2, 0);
@@ -7,6 +9,8 @@ function TimeGrabber(Time){
     const DisplayTime = Hours + ":" + Minutes + ":" + Seconds;
     return DisplayTime;
 };
+
+// Individual times
 function GetGermanyTime() {
     const TimeInGerman = new Date;
     document.getElementById("CurrentTimeGermany").textContent = TimeGrabber(TimeInGerman);
@@ -16,12 +20,15 @@ function GetJapanTime(){
     document.getElementById("CurrentTimeJapan").textContent = TimeGrabber(TimeInJapan);
 };
 function GetUTCTime(){
-    let TimeUTC = new Date;
+    const TimeUTC = new Date;
     document.getElementById("CurrentTimeUTC").textContent = TimeGrabber(TimeUTC);
 }
+
+// Loop
 GetGermanyTime();
 GetJapanTime();
 GetUTCTime();
+
 setInterval(GetGermanyTime, 1000);
 setInterval(GetJapanTime, 1000);
-setIntetval(GetUTCTime, 1000);
+setInterval(GetUTCTime, 1000);
