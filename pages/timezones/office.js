@@ -1,6 +1,10 @@
 console.log("Initializing...");
 console.log("Ready!");
 
+// some styling stuff
+const img = document.querySelector('img');
+img.draggable = false;
+
 // Print time on screen
 function TimeGrabber(Time){
     const Hours = Time.getHours().toString().padStart(2, 0);
