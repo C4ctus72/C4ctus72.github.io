@@ -8,6 +8,11 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
+nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
 .Time{
     display: flex;
     flex-direction: column;
