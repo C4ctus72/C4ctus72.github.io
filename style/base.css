@@ -2,10 +2,11 @@
     font-family: monospace;
 }
 html{
-    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDA4bmx6M3MwemZoZGVhOWdxN3JtZXU0Nm02ejYzcjFrMmRiM3NyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PCbbTEkATqZM4xYanM/giphy.webp');
+    /* background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDA4bmx6M3MwemZoZGVhOWdxN3JtZXU0Nm02ejYzcjFrMmRiM3NyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PCbbTEkATqZM4xYanM/giphy.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: rgb(50 50 50);
 }
 body{
     overflow-y: scroll;
@@ -35,12 +36,13 @@ header, main{
     width: 100%;
 }
 a, p, li, ul, ol{
-    color: rgb(255, 240, 128);
+    /* color: rgb(255, 240, 128); */
+    color: greenyellow;
     font-size: 20px;
 }
-a{
+/* a{
     color: aquamarine;
-}
+} */
 h1, h2, h3, h4, h5, h6{
-    color: pink;
+    color:aquamarine;
 }
