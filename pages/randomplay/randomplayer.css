@@ -1,0 +1,9 @@
+#AlbumCover{
+    aspect-ratio: 1/1;
+    width: 500px;
+}
+.contianer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
