@@ -1,38 +1,34 @@
-console.log("Initializing...");
-console.log("Ready!");
-
 // some styling stuff
-const img = document.querySelector('img');
+const img = document.querySelector("img");
 img.draggable = false;
 
-// Print time on screen
-function TimeGrabber(Time){
-    const Hours = Time.getHours().toString().padStart(2, 0);
-    const Minutes = Time.getMinutes().toString().padStart(2, 0);
-    const Seconds = Time.getSeconds().toString().padStart(2, 0);
-    const DisplayTime = Hours + ":" + Minutes + ":" + Seconds;
-    return DisplayTime;
+//Time stuff
+const options = {
+  hours: "2-digit",
+  minutes: "2-digit",
+  seconds: "2-digit",
 };
 
-// Individual times
-function GetGermanyTime() {
-    const TimeInGerman = new Date;
-    document.getElementById("CurrentTimeGermany").textContent = TimeGrabber(TimeInGerman);
-};
-function GetJapanTime(){
-    const TimeInJapan = new Date;
-    document.getElementById("CurrentTimeJapan").textContent = TimeGrabber(TimeInJapan);
-};
-function GetUTCTime(){
-    const TimeUTC = new Date;
-    document.getElementById("CurrentTimeUTC").textContent = TimeGrabber(TimeUTC);
+let DateVar = new Date();
+
+const timezonede = "Europe/Berlin"
+const timezonejp = "Asia/Tokyo"
+const timezoneca = "America/Toronto"
+const timezoneLA = "America/Los_Angeles"
+//Print 2 screen
+function print(HtmlElement, timezone){
+    document.getElementById(HtmlElement).textContent = DateVar.toLocaleTimeString(undefined, { timeZone: timezone, ...options, })
 }
 
-// Loop
-GetGermanyTime();
-GetJapanTime();
-GetUTCTime();
+print("CurrentTimeGermany", timezonede)
+print("CurrentTimeJapan", timezonejp)
+print("CurrentTimeCanada", timezoneca)
+print("CurrentTimeLA", timezoneLA)
 
-setInterval(GetGermanyTime, 1000);
-setInterval(GetJapanTime, 1000);
-setInterval(GetUTCTime, 1000);
+setInterval(() => {
+    DateVar = new Date()
+    print("CurrentTimeGermany", timezonede)
+    print("CurrentTimeJapan", timezonejp)
+    print("CurrentTimeCanada", timezoneca)
+    print("CurrentTimeLA", timezoneLA)
+},  1000);
