@@ -1,8 +1,6 @@
-#video_player{
-    display: none;
+.player{
+  display: none;
 }
-button{
-    color: greenyellow;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
+.song_button{
+  width: 50%;
 }

@@ -10,9 +10,9 @@
     <!--  -->
     <title>Hac's little website</title>
     <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="/style/base.css">
+    <link rel="stylesheet" href="../../style/base.css">
     <link rel="stylesheet" href="/style/resize.css">
-    <link rel="stylesheet" href="/videos.css">
+    <link rel="stylesheet" href="./videos.css">
 </head>
 
 <body>
@@ -61,12 +61,16 @@
             <li>Ghost City Tokio: https://www.youtube.com/watch?v=DtBoAqkIJzI</li>
         </ul>
         <p>I could put so much stuff in here. RIP to all the ones that don't work anymore.</p>
-        <h1>Songs</h1>
-        <button type="button" onclick="toggle_visible()" id="link">JIT - 17Bucks</button>
-        <button type="button" onclick="toggle_visible()"> #13 shade</button>
-        <div id="video_player"><iframe width="560" height="315" src="https://www.youtube.com/embed/ihs3cxzHpIU?si=HqkFJLM8ZOmN-Y1T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        https://youtu.be/gqJ1BQSnLmg?feature=shared
-    </main>
+        <h1>Some songs</h1>
+            <button onclick="toggle_jit()" id="jit_button" class="song_button">JIT - 17bucks</button>
+            <div class="player" id="jit_player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ihs3cxzHpIU?si=HqkFJLM8ZOmN-Y1T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <button onclick="toggle_shade()"id="shade_button" class="song_button">#13 shade - dedf1sh</button>
+            <div class="player" id="shade_player">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gqJ1BQSnLmg?si=meqwd67jOf7L2pGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+            </div>
+        </main>
     <script src="videos.js"></script>
 </body>
 
