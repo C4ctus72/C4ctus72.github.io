@@ -10,9 +10,13 @@
     <!--  -->
     <title>Hac's website | HAJ</title>
     <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./style/base.css">
-    <link rel="stylesheet" href="/style/resize.css">
-    <link rel="stylesheet" href="./randomplayer.css">
+    <link rel="stylesheet" href="../../style/base.css">
+    <link rel="stylesheet" href="../../style/resize.css">
+    <link rel="stylesheet" href="randomplayer.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,13 +27,21 @@
         <a href="/pages/others/others.html">others.html</a>
    </nav>
    <main>
+
+
         <h1>RandomSplatoonSongGiver</h1>
-        <h3>Currently only includes music from the Octo Expansion</h3>
+        <p id="info"><a href="javascript:toggle_message(info)">[close]</a> -- Currently only includes music from the Octo Expansion</p>
         <hr>
         <div class="contianer">
             <img src="" alt="albumCover" id="AlbumCover">
             <h2 id="SongTitle">Songtitle</h2>
         </div>
+        <span>
+            <h3>Songlist</h3>
+            <ol>
+                <li>#13 Shade</li>
+            </ol>
+        </span>
     </main>
 </body>
 <script src="randomplayer.js"></script>

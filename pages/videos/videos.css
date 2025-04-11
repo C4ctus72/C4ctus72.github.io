@@ -1,6 +1,14 @@
+*{
+  font-family: "Reddit Mono";
+}
 .player{
   display: none;
 }
 .song_button{
-  width: 50%;
+  margin-left: 33%;
+  color: lime;
+  width: 25%;
+  height: 125%;
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 5px;
 }

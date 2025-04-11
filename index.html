@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="./style/base.css">
     <link rel="stylesheet" href="/style/resize.css">
     <link rel="stylesheet" href="./style/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,6 +27,7 @@
         <a href="./pages/timezones/office.html">office.html</a>
         <a href="./pages/videos/videos.html">videos.html</a>
         <a href="./pages/others/others.html">others.html</a>
+        <!-- <a href="javascript:ddm(cool_people)" id="open-close">[>]</a> -->
     </nav>
     <header>
         <span><h1>Hac's little website</h1></span>
@@ -57,24 +62,12 @@
                 <li>
                     <a href="./pages/randomplay/randomplayer.html">Random Splatoon soundtrack player (under construction)</a>
                 </li>
-                
             </ul>
         </div>
     </main>
-    <main>
-        <div id="music">
-            <h1>Octo Canyon - Turquise October <a href="https://splatoonwiki.org/wiki/Octo_Canyon_(song)" id="link2song" target="_blank">(song)</a></p>
-            <audio controls loop >    
-                <source src="./OC_Octo_Canyon_(Tentakeel_Outpost).mp3" type="audio/mpeg">
-            </audio>
-        </div>
-    </main>
-
-    <main>
-        <div class="ddm">
-            <h1>Cool people <a href="javascript:ddm(cool_people)" id="open-close" data-index="1">[>]</a></h1>
-        </div>
-        <div id="cool-people">
+    <main id="cool-people">
+        <div>
+            <h1>Youtubers I watch</h1>
             <div class="cp cp-german">
                 <ol>
                     <li>Vik</li>
@@ -133,7 +126,6 @@
             <div class="cp cp-others">
                 <ol>
                     <li>prochara</li>
-                    <!--<li>2Ape0</li>-->
                     <li>popuraσ</li>
                 </ol>
             </div>
