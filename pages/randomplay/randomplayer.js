@@ -32,23 +32,42 @@ songs_turquoise_october_string = ["Octoling Rendezvous"]
 songs_squid_sisters_string = ["Calamari Inkantation (Inner Agent 3)"]
 
 
+//trying objects
+const new_shell = {
+  name: "#0 shell",
+  artist: "Dedf1sh"
+}
+const new_shade = {
+  name: "#13 shade",
+  artist: "Dedf1sh"
+}
+const new_frisk = {
+  name: "#6 frisk",
+  artist: "Dedf1sh"
+}
 
-const shell = "https://cdn.wikimg.net/en/splatoonwiki/images/f/f9/OE_0_shell.mp3"
-const progress = "https://cdn.wikimg.net/en/splatoonwiki/images/4/4c/OE_1_progress.mp3"
-const ripped = "https://cdn.wikimg.net/en/splatoonwiki/images/c/cd/OE_2_ripped.mp3"
-const dunno = "https://cdn.wikimg.net/en/splatoonwiki/images/7/72/OE_4_dunno.mp3"
-const thirsty = "https://cdn.wikimg.net/en/splatoonwiki/images/f/f7/OE_5_thirsty.mp3"
-const frisk = "https://cdn.wikimg.net/en/splatoonwiki/images/8/87/OE_6_frisk.mp3"
-const regret = "https://cdn.wikimg.net/en/splatoonwiki/images/9/9b/OE_8_regret.mp3"
-const party = "https://cdn.wikimg.net/en/splatoonwiki/images/2/2c/OE_9_party.mp3"
-const above = "https://cdn.wikimg.net/en/splatoonwiki/images/c/ce/OE_11_above.mp3"
-const awake = "https://cdn.wikimg.net/en/splatoonwiki/images/3/3f/OE_12_awake.mp3"
-const shade = "https://cdn.wikimg.net/en/splatoonwiki/images/c/c2/OE_13_shade.mp3"
-const salty = "https://cdn.wikimg.net/en/splatoonwiki/images/8/82/OE_16_salty.mp3"
-const bless = "https://cdn.wikimg.net/en/splatoonwiki/images/e/e0/OE_19_bless.mp3"
-const Splattack_Octo = "https://cdn.wikimg.net/en/splatoonwiki/images/0/0e/OE_Splattack%21_%28Octo%29.mp3"
+const new_songs_dedf1sh = [new_frisk, new_shade, new_shell]
 
-const Calamari_Inkarnation = "https://cdn.wikimg.net/en/splatoonwiki/images/b/b5/ShowdownWithInnerAgent3.mp3"
+
+
+
+
+
+const shell_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/f/f9/OE_0_shell.mp3"
+const progress_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/4/4c/OE_1_progress.mp3"
+const ripped_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/c/cd/OE_2_ripped.mp3"
+const dunno_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/7/72/OE_4_dunno.mp3"
+const thirsty_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/f/f7/OE_5_thirsty.mp3"
+const frisk_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/8/87/OE_6_frisk.mp3"
+const regret_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/9/9b/OE_8_regret.mp3"
+const party_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/2/2c/OE_9_party.mp3"
+const above_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/c/ce/OE_11_above.mp3"
+const awake_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/3/3f/OE_12_awake.mp3"
+const shade_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/c/c2/OE_13_shade.mp3"
+const salty_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/8/82/OE_16_salty.mp3"
+const bless_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/e/e0/OE_19_bless.mp3"
+const Splattack_Octo_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/0/0e/OE_Splattack%21_%28Octo%29.mp3"
+const Calamari_Inkarnation_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/b/b5/ShowdownWithInnerAgent3.mp3"
 
 
 every_song_string = [songs_dedf1sh_string, songs_off_the_hook_string, songs_turquoise_october_string, songs_squid_sisters_string]

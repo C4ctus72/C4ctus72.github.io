@@ -131,7 +131,16 @@
             </div>
         </div>
     </main>
+    <footer>
+        <p>Now playing - Nightlight by Saruky</p>
+        <audio id="player" src="/Nightlight (Menu Music) - FNF_ Hotline 024 (The Medley Update) [ ezmp3.cc ].mp3" autoplay loop></audio>
+        <div> 
+            <button onclick="document.getElementById('player').play()" id="play">Play</button> 
+            <button onclick="document.getElementById('player').pause()" id="pause">Pause</button> 
+            <button onclick="document.getElementById('player').volume += 0.1" id="volplus">Vol +</button> 
+            <button onclick="document.getElementById('player').volume -= 0.1" id="volminus">Vol -</button> 
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
-
 </html>

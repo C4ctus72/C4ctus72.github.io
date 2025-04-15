@@ -23,3 +23,8 @@ function ddm(x) {
       break;
   }
 }
+
+
+if (document.getElementById("player").onplay()){
+  
+}

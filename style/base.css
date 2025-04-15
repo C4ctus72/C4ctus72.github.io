@@ -35,6 +35,19 @@ header, main{
     overflow:auto;
     width: 100%;
 }
+footer{
+    background-color: rgb(60, 40, 40);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    border: 5px black solid;
+    bottom: 0;
+    margin-top: 5px;
+    padding-bottom: 2px;
+}
+
 a, p, li, ul, ol{
     /* color: rgb(255, 240, 128); */
     color: greenyellow;
