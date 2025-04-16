@@ -30,22 +30,21 @@
    </nav>
    <main>
         <h1>RandomSplatoonSongGiver</h1>
-        <p id="info"><a href="javascript:toggle_message(info)">[close]</a> -- Currently only includes music from the Octo Expansion</p>
+        <p id="info"><a href="javascript:toggle_message(info)">[close]</a>
+            Press 'Refresh' if the song does'nt play. 'Pause/Play' also does'nt work yet. Also there are only Dedf1sh songs.
+        </p>
         <hr>
         <div class="contianer">
             <img src="" alt="AlbumCover" id="AlbumCover">
             <h2 id="SongTitle">Songtitle</h2>
-            <audio src="" id="Audio" autoplay></audio>
-            <a href="javascript:getrandom()">Refresh</a>
+            <audio src="" id="Audio" autoplay loop><source src="" type="mpeg/mp3"></audio>
+            <button id="PausePlay">Play/Pause</button>
+            <a href="javascript:pickrandom()">Refresh</a>
         </div>
-        <span>
-            <!-- <h3>Songlist</h3> -->
-            <ol>
-                
-            </ol>
-        </span>
     </main>
 </body>
 <!-- <script src="randomplayer.js"></script> -->
 <script src="randomplayer2.js"></script>
+
+
 </html>
