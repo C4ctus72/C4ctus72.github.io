@@ -4,14 +4,14 @@
 <head>
     <meta name="title" content="RandomSplatoonSongGiver | by Hactus">
     <meta name="description" content="A website to generate random Splatoon songs">
-    <meta name="image" content="favicon.jpg">
+    <meta name="image" content="../../favicon.jpg">
     <meta name="url" content="https://hactuss.github.io/">
     <meta name="type" content="website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <!--  -->
     <title>Hac's website | HAJ</title>
-    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="../../style/base.css">
     <link rel="stylesheet" href="../../style/resize.css">
     <link rel="stylesheet" href="randomplayer.css">
@@ -31,14 +31,17 @@
    <main>
         <h1>RandomSplatoonSongGiver</h1>
         <p id="info"><a href="javascript:toggle_message(info)">[close]</a>
-            Press 'Refresh' if the song does'nt play. 'Pause/Play' also does'nt work yet. Also there are only Dedf1sh songs.
+            Press 'Refresh' if the song does'nt play. There are only song snippets from inkipedia.org. There's also a rare chance that it wont play any song, whick i dont know how to fix. msg me on discord id you know. i'd apprechate :) 
         </p>
         <hr>
         <div class="contianer">
             <img src="" alt="AlbumCover" id="AlbumCover">
             <h2 id="SongTitle">Songtitle</h2>
-            <audio src="" id="Audio" autoplay loop><source src="" type="mpeg/mp3"></audio>
-            <button id="PausePlay">Play/Pause</button>
+            <audio src="" id="Audio" autoplay><source src="" type="mpeg/mp3"></audio>
+            <!-- <div id="progressbar">
+                <div id="Progress"><p></p></div>
+            </div> -->
+            <button id="PausePlay" onclick="controlbutton()">Play/Pause</button>
             <a href="javascript:pickrandom()">Refresh</a>
         </div>
     </main>

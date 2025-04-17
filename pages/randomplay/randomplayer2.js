@@ -16,12 +16,12 @@ function toggle_message(x) {
     }
 }
 
-
 // HTML links
 let AlbumCoverHTML = document.getElementById("AlbumCover")
 let SongtitleHTML = document.getElementById("SongTitle")
 let AudioHTML = document.getElementById("Audio")
-let PausePlay = document.getElementById("PausePlay")
+let PausePlayHTML = document.getElementById("PausePlay")
+let ProgressHTML = document.getElementById("Progress")
 
 // Albumcovers
 // https://splatoonwiki.org/wiki/Octo_Expansion#Music
@@ -46,6 +46,17 @@ const crush_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/4/4a/OE_14_cr
 const salty_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/8/82/OE_16_salty.mp3"
 const bless_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/e/e0/OE_19_bless.mp3"
 const Splattack_Octo_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/0/0e/OE_Splattack%21_%28Octo%29.mp3"
+
+const Octoling_Rendezvous_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/d/d0/OV_Octoling_Rendezvous.mp3"
+
+const Nasty_Majesty_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/6/65/OE_Nasty_Majesty.mp3"
+const Shark_Bytes_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/9/9a/OE_Shark_Bytes.mp3"
+const Here_Comes_Ultimate_Doom_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/2/2c/OE_Last_Battle_Opening.mp3"
+const Fly_Coto_Fly_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/b/b3/OE_Fly_Octo_Fly_~_Ebb_%26_Flow_%28Octo%29.mp3"
+const Into_The_Light_auido = "https://cdn.wikimg.net/en/splatoonwiki/images/c/ce/OE_Into_the_Light.mp3"
+const Ebb_and_FlowDemo_frsh_Sketch_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/a/af/Ebb%26FlowDemo.frsh.mp3"
+const Dudes_Be_Sleeping_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/d/dd/Dudes_Be_Sleepin_Sample.mp3"
+
 const Calamari_Inkarnation_audio = "https://cdn.wikimg.net/en/splatoonwiki/images/b/b5/ShowdownWithInnerAgent3.mp3"
 
 songs_dedf1sh_sting = ["#0 shell", "#1 progress", "#2 ripped", "#4 dunno", "#5 thirsty", "#6 frisk", "#8 regret", "#9 party", "#11 above", "#12 awake", "#13 shade", "#14 crush", "#16 salty", "#19 bless", "Splattack! (Octo)"]
@@ -138,41 +149,51 @@ const songs = {
     "16": {
         name: "Nasty Majesty",
         artist: "Off The Hook",
+        audio: Nasty_Majesty_audio
     },
     "17": {
         name: "Shark Bytes",
-        artist: "Off The Hook"
+        artist: "Off The Hook",
+        audio: Shark_Bytes_audio
     },
     "18": {
         name: "Here Comes Ultimate Doom",
-        artist: "Off The Hook"
+        artist: "Off The Hook",
+        audio:Here_Comes_Ultimate_Doom_audio
     },
     "19": {
         name: "Fly Octo Fly ~ Ebb & Flow (Octo)",
-        artist: "Off The Hook"
+        artist: "Off The Hook",
+        audio:Fly_Coto_Fly_audio
     },
     "20": {
         name: "Into the Light",
-        artist: "Off The Hook"
+        artist: "Off The Hook",
+        audio:Into_The_Light_auido
     },
     "21": {
         name: "Ebb&FlowDemo.frsh (Sketch)",
-        artist: "Off The Hook"
+        artist: "Off The Hook",
+        audio:Ebb_and_FlowDemo_frsh_Sketch_audio
     },
     "22": {
         name: "#$@%* Dudes Be #$@%* Sleepin' (Live)",
-        artist: "Off The Hook"
+        artist: "Off The Hook",
+        audio:Dudes_Be_Sleeping_audio
     },
     "23": {
         name: "Octoling Rendezvous",
-        artist: "Turquoise October"
+        artist: "Turquoise October",
+        audio:Octoling_Rendezvous_audio
+        
     },
     "24": {
         name: "Calamari Inkantation (Inner Agent 3)",
-        artist: "Squid Sisers"
+        artist: "Squid Sisers",
+        audio:Calamari_Inkarnation_audio
     }
 }
-function pickrandom(min = 0, max = 15){
+function pickrandom(min = 0, max = 24){
     const randomsong = songs[Math.floor(Math.random() * (max - min) + min)]
     SongtitleHTML.textContent = randomsong.name
     
@@ -196,3 +217,22 @@ function pickrandom(min = 0, max = 15){
     AudioHTML.play()
 }
 pickrandom()
+
+// AudioHTML.addEventListener("timeupdate", () =>{
+//     // prg bar 100px
+//     // dur / 100 = widt
+    
+//     let currenttime = AudioHTML.currentTime
+//     let duration = AudioHTML.duration
+//     ProgressHTML.style.width = duration / 100 + "px" 
+// })
+
+
+function controlbutton(){
+    if(!AudioHTML.paused){
+        AudioHTML.pause()
+    }
+    else{
+        AudioHTML.play()
+    }
+}

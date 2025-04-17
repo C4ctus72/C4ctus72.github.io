@@ -17,3 +17,16 @@ hr{
     margin: 20px;
     font-size: 25px;
 }
+
+
+#progressbar{
+    width: 100px;
+    height: 25px;
+    background-color: grey;
+
+}
+#progress{
+    width: 0;
+    height: 25px;
+    background-color: lime;
+}
