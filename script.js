@@ -28,3 +28,7 @@ function ddm(x) {
 if (document.getElementById("player").onplay()){
   
 }
+
+function theme(){
+  location.replace("/pages/17/17.html")
+}
