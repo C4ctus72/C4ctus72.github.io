@@ -1,51 +1,54 @@
-nav{
-    background-color: black;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+nav {
+  background-color: black;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-#AlbumCover{
-    aspect-ratio: 1/1;
-    width: 500px;
+#AlbumCover {
+  aspect-ratio: 1/1;
+  width: 500px;
 }
-.contianer{
-    padding-top: 10px;
-    display: flex;
+.contianer {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur;
+  margin-left: 12, 5%;
+  margin-right: 12, 5%;
+}
+hr {
+  width: 75%;
+}
+#PausePlay,
+#Refresh {
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  font-size: 25px;
+  background-color: lime;
+  border: none;
+}
+#PausePlay:active,
+#Refresh:active {
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  font-size: 25px;
+  color: lime;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 500px) {
+  #buttons {
     flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur;
-    margin-left: 12,5%;
-    margin-right: 12,5%;
-}
-hr{width: 75%;}
-#PausePlay, #Refresh{
-    width: 200px;
-    height: 50px;
-    margin: 20px;
-    font-size: 25px;
-    background-color: lime;
-    border: none;
-}
-#PausePlay:active, #Refresh:active{
-    width: 200px;
-    height: 50px;
-    margin: 20px;
-    font-size: 25px;
-    color: lime;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-}
-
-
-#buttons{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-@media only screen and (max-width: 500px){
-    #buttons{
-        flex-direction: column;
-    }
+  }
 }

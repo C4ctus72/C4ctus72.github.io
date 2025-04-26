@@ -1,44 +1,45 @@
-@media only screen and (max-width: 700px){
-    main{
-        margin-top: 5px;
-    }
-    .one{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    nav{
-        margin: 0;
-    }
+@media only screen and (max-width: 700px) {
+  main {
+    margin-top: 5px;
+  }
+  .one {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  nav {
+    margin: 0;
+  }
 }
-@media only screen and (max-width: 500px){
-    body{
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    main, header{
-        display: flex;
-        justify-content: center;
-        /* margin: 0;
+@media only screen and (max-width: 500px) {
+  body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  main,
+  header {
+    display: flex;
+    justify-content: center;
+    /* margin: 0;
         border-left: 0px;
         border-right: 0px; */
-        margin-top: 5px;
-        font-size: 25px;
-    }
-    p{
-        font-size: 20px;
-        margin-left: 5%;
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    a{
-        margin: 2%;
-    }
-    .cool-people{
-        overflow: hidden;
-    }
+    margin-top: 5px;
+    font-size: 25px;
+  }
+  p {
+    font-size: 20px;
+    margin-left: 5%;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  a {
+    margin: 2%;
+  }
+  .cool-people {
+    overflow: hidden;
+  }
 }

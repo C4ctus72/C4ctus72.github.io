@@ -11,33 +11,36 @@ const options = {
 
 let DateVar = new Date();
 
-const timezonede = "Europe/Berlin"
-const timezonejp = "Asia/Tokyo"
-const timezoneca = "America/Toronto"
-const timezoneNY = "America/New_York"
-const timezoneLA = "America/Los_Angeles"
-const timezonefr = "Europe/Paris"
-const timezonech = "Asia/Bejing"
+const timezonede = "Europe/Berlin";
+const timezonejp = "Asia/Tokyo";
+const timezoneca = "America/Toronto";
+const timezoneNY = "America/New_York";
+const timezoneLA = "America/Los_Angeles";
+const timezonefr = "Europe/Paris";
+const timezonech = "Asia/Bejing";
 //Print 2 screen
-function print(HtmlElement, timezone){
-    document.getElementById(HtmlElement).textContent = DateVar.toLocaleTimeString(undefined, { timeZone: timezone, ...options, })
+function print(HtmlElement, timezone) {
+  document.getElementById(HtmlElement).textContent = DateVar.toLocaleTimeString(
+    undefined,
+    { timeZone: timezone, ...options }
+  );
 }
 
-print("CurrentTimeGermany", timezonede)
-print("CurrentTimeJapan", timezonejp)
-print("CurrentTimeCanada", timezoneca)
-print("CurrentTimeLA", timezoneLA)
-print("CurrentTimeParis", timezonefr)
-print("CurrentTimeBejing", timezoneca)
-print("CurrentTimeNYC", timezoneNY)
+print("CurrentTimeGermany", timezonede);
+print("CurrentTimeJapan", timezonejp);
+print("CurrentTimeCanada", timezoneca);
+print("CurrentTimeLA", timezoneLA);
+print("CurrentTimeParis", timezonefr);
+print("CurrentTimeBejing", timezoneca);
+print("CurrentTimeNYC", timezoneNY);
 
 setInterval(() => {
-    DateVar = new Date()
-    print("CurrentTimeGermany", timezonede)
-    print("CurrentTimeJapan", timezonejp)
-    print("CurrentTimeCanada", timezoneca)
-    print("CurrentTimeLA", timezoneLA)
-    print("CurrentTimeParis", timezonefr)
-    print("CurrentTimeBejing", timezoneca)
-    print("CurrentTimeNYC", timezoneNY)
-  },  1000);
+  DateVar = new Date();
+  print("CurrentTimeGermany", timezonede);
+  print("CurrentTimeJapan", timezonejp);
+  print("CurrentTimeCanada", timezoneca);
+  print("CurrentTimeLA", timezoneLA);
+  print("CurrentTimeParis", timezonefr);
+  print("CurrentTimeBejing", timezoneca);
+  print("CurrentTimeNYC", timezoneNY);
+}, 1000);

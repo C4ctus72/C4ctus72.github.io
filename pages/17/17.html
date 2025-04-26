@@ -1,57 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="17.css">
+    <link rel="stylesheet" href="17.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Reddit+Mono:wght@200..900&family=Tiny5&display=swap" rel="stylesheet"></head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Reddit+Mono:wght@200..900&family=Tiny5&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main id="main">
-        <nav>
-            <a href="../../index.html">Home</a>
-            <a href="../timezones/office.html">office</a>
-            <a href="../videos/videos.html">videos</a>
-            <a href="../others/others.html">others</a>
-        </nav>
-        <head>
-            <h1>The hactus website</h1>
-        </head>
-        <br>
-        <ul>
-            <li>
-                <a href="/pages/chompo/CHOMPO-revamped-by-Hactus.html">a redesign of Tokyomachine's chompochompo.com</a>
-            </li>
-            <li>
-                <a href="/pages/timezones/office.html">a business thing with multiple timezones </a>
-            </li>
-            <li>
-                <a href="/pages/randomplay/randomplayer.html">Random Splatoon soundtrack player</a>
-            </li>
-        </ul>
-        <br>
-        <p>Now playing - <a href="https://www.youtube.com/watch?v=iHEL3iHdu2A">Nightlight by Saruky</a></p>
-        <audio id="player" src="/Nightlight (Menu Music) - FNF_ Hotline 024 (The Medley Update) [ ezmp3.cc ].mp3" autoplay loop></audio>
-        <a href="javascript:document.getElementById('player').play()" id="play">Play</a> 
-        <a href="javascript:document.getElementById('player').pause()" id="pause">Pause</a> 
-        <a href="javascript:document.getElementById('player').volume += 0.1" id="volplus">Vol +</a> 
-        <a href="javascript:document.getElementById('player').volume -= 0.1" id="volminus">Vol -</a> 
+      <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../timezones/office.html">office</a>
+        <a href="../videos/videos.html">videos</a>
+        <a href="../others/others.html">others</a>
+      </nav>
+      <head>
+        <h1>The hactus website</h1>
+      </head>
+      <br />
+      <ul>
+        <li>
+          <a href="/pages/chompo/CHOMPO-revamped-by-Hactus.html"
+            >a redesign of Tokyomachine's chompochompo.com</a
+          >
+        </li>
+        <li>
+          <a href="/pages/timezones/office.html"
+            >a business thing with multiple timezones
+          </a>
+        </li>
+        <li>
+          <a href="/pages/randomplay/randomplayer.html"
+            >Random Splatoon soundtrack player</a
+          >
+        </li>
+      </ul>
+      <br />
+      <p>
+        Now playing -
+        <a href="https://www.youtube.com/watch?v=iHEL3iHdu2A"
+          >Nightlight by Saruky</a
+        >
+      </p>
+      <audio
+        id="player"
+        src="/Nightlight (Menu Music) - FNF_ Hotline 024 (The Medley Update) [ ezmp3.cc ].mp3"
+        autoplay
+        loop
+      ></audio>
+      <a href="javascript:document.getElementById('player').play()" id="play"
+        >Play</a
+      >
+      <a href="javascript:document.getElementById('player').pause()" id="pause"
+        >Pause</a
+      >
+      <a
+        href="javascript:document.getElementById('player').volume += 0.1"
+        id="volplus"
+        >Vol +</a
+      >
+      <a
+        href="javascript:document.getElementById('player').volume -= 0.1"
+        id="volminus"
+        >Vol -</a
+      >
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Parental_Advisory_label.svg" alt="Parental_Advisory_label" id="parental_advisory">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/33/Parental_Advisory_label.svg"
+        alt="Parental_Advisory_label"
+        id="parental_advisory"
+      />
     </main>
-    <footer>
-    </footer>
+    <footer></footer>
     <script>
-        document.getElementById("themeback").addEventListener("click", () => {
-            location.replace("../../index.html")
-        })
+      document.getElementById("themeback").addEventListener("click", () => {
+        location.replace("../../index.html");
+      });
     </script>
-</body>
+  </body>
 </html>

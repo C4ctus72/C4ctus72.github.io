@@ -1,10 +1,10 @@
-*{
+* {
   font-family: "Reddit Mono";
 }
-.player{
+.player {
   display: none;
 }
-.song_button{
+.song_button {
   margin-left: 33%;
   color: lime;
   width: 25%;

@@ -24,11 +24,9 @@ function ddm(x) {
   }
 }
 
-
-if (document.getElementById("player").onplay()){
-  
+if (document.getElementById("player").onplay()) {
 }
 
-function theme(){
-  location.replace("/pages/17/17.html")
+function theme() {
+  location.replace("/pages/17/17.html");
 }
