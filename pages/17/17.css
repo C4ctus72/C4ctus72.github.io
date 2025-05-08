@@ -84,7 +84,7 @@ body {
   font-size: 20px;
   color: black;
   /* width: 1920px; */
-  height: 1080px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,19 +92,15 @@ body {
 }
 main {
   background-color: white;
-  width: 1080px;
-  height: 864px;
-  padding: 2.5%;
+  width: 800px;
+  height: 600px;
+  padding: 2.5%; 
+  margin: 6.25%;
 }
 a {
   color: black;
 }
-#parental_advisory {
-  width: 175px;
-  position: absolute;
-  top: 850px;
-  left: 1300px;
-}
+
 ul {
   list-style-type: circle;
 }
