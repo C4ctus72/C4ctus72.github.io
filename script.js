@@ -7,7 +7,7 @@
 
 let cool_people = document.getElementById("cool-people");
 let openclose_cp = document.getElementById("open-close");
-cool_people.style.display = "none";
+//cool_people.style.display = "none";
 
 function ddm(x) {
   switch (x.style.display) {
@@ -23,10 +23,6 @@ function ddm(x) {
       break;
   }
 }
-
-if (document.getElementById("player").onplay()) {
-}
-
 function theme() {
   location.replace("/pages/17/17.html");
 }
