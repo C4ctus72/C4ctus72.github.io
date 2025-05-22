@@ -71,3 +71,28 @@ h5,
 h6 {
   color: aquamarine;
 }
+
+
+/*
+psychos
+
+body {
+background-image: url('../images/PsychOSWallpaper_ParkingGarage.jpg');
+background-attachment: fixed;
+background-color: #101417;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+color: #A79E8B;
+font-family: monospace;
+font-size: 1em;
+min-height: 100%;
+}
+
+
+a:link, a:visited {background: transparent; color:#333; text-decoration:none;}
+a:link[href^="http://"]:after, a[href^="http://"]:visited:after {content: " (" attr(href) ") "; font-size: 11px;}
+a:link[href^="https://"]:after, a[href^="https://"]:visited:after {content: " (" attr(href) ") "; font-size: 11px;}
+a[href^="http://"] {color:#000;}
+a[href^="https://"] {color:#000;}
+*/
