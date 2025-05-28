@@ -78,21 +78,23 @@
         loop
       ></audio>
       <div>
-        <button onclick="document.getElementById('player').play()" id="play">
+        <button onclick="document.getElementById('player').play()" id="play" class="radio_control">
           Play
         </button>
-        <button onclick="document.getElementById('player').pause()" id="pause">
+        <button onclick="document.getElementById('player').pause()" id="pause" class="radio_control">
           Pause
         </button>
         <button
           onclick="document.getElementById('player').volume += 0.1"
           id="volplus"
+          class="radio_control"
         >
           Vol +
         </button>
         <button
           onclick="document.getElementById('player').volume -= 0.1"
           id="volminus"
+          class="radio_control"
         >
           Vol -
         </button>
@@ -101,6 +103,7 @@
       <a href="https://giphy.com/gifs/loop-vaporwave-oSYflamt3IEjm">background gif</a>
     </footer>
     <script src="script/script.js"></script>
+    <script src="script/radio.js"></script>
   </body>
 <!--
 https://fonts.google.com/specimen/Reddit+Mono
