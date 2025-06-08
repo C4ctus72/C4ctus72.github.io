@@ -1,0 +1,44 @@
+:root{
+    font-family: monospace;
+    color: rgb(255, 240, 128);
+    font-size: 20px;
+}
+/* Content Rules */
+
+html{
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDA4bmx6M3MwemZoZGVhOWdxN3JtZXU0Nm02ejYzcjFrMmRiM3NyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PCbbTEkATqZM4xYanM/giphy.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main{
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.div{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0, 0.3);
+    background-color: rgb(0, 0, 0, 0.25);
+    
+}
+
+
+
+
+/* Text Rules */
+h1{
+    color: pink;
+    font-size: 40px;
+}
+a{
+    color: aquamarine;
+}
