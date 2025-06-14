@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="image" content="favicon.jpg" />
+    <meta name="url" content="https://hactuss.github.io/" />
+    <meta name="type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="origin" content="https://hactuss.github.io/">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <!--  -->
+    <title>Hac's Radio Station</title>
+    <link rel="shortcut icon" href="/img/logo_bg.GIF" type="image/gif" />
+    <link rel="stylesheet" href="radio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="./index.html">[Home]</a>
+        <a href="./pages/timezones/office.html">office.html</a>
+        <a href="./pages/videos/videos.html">videos.html</a>
+        <a href="./pages/others/others.html">others.html</a>
+        <a href="./pages/radio/radio.html">radio.html</a>
+    </nav>
+</header>
+<main id="songlistbuttons">
+    <div>
+        <button onclick="document.getElementById('player').play()" id="play" class="radio_control">
+            > Play <
+        </button>
+        <button onclick="document.getElementById('player').pause()" id="pause" class="radio_control">
+            Pause
+        </button>
+        <button
+                onclick="document.getElementById('player').volume += 0.1"
+                id="volplus"
+                class="radio_control"
+        >
+            Vol +
+        </button>
+        <button
+                onclick="document.getElementById('player').volume -= 0.1"
+                id="volminus"
+                class="radio_control"
+        >
+            Vol -
+        </button>
+    </div>
+    <p>
+        Now playing -
+        <a
+                href="https://www.youtube.com/watch?v=iHEL3iHdu2A"
+                id="playingsong"
+        >Nightlight by Saruky</a
+        >
+    </p>
+    <audio
+            id="player"
+            src="/pages/radio/songs/Nightlight (Menu Music) - FNF_ Hotline 024 (The Medley Update) [ ezmp3.cc ].mp3"
+            loop
+    ></audio>
+</main>
+<main class="song_buttons">
+    <button
+            onclick="toggle_player(jit_player)"
+            id="jit_button"
+            class="song_button"
+    >
+        JIT - 17bucks
+    </button>
+    <div class="player" id="jit_player">
+        <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ihs3cxzHpIU?si=HqkFJLM8ZOmN-Y1T"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+        ></iframe>
+    </div>
+    <button
+            onclick="toggle_player(shade_player)"
+            id="shade_button"
+            class="song_button"
+    >
+        #13 shade - dedf1sh
+    </button>
+    <div class="player" id="shade_player">
+        <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gqJ1BQSnLmg?si=meqwd67jOf7L2pGd"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+        ></iframe>
+    </div>
+    <button
+            onclick="toggle_player(octo_canyon_player)"
+            id="octo_canyon_button"
+            class="song_button"
+    >
+        Octo Canyon - Turquoise October
+    </button>
+    <div class="player" id="octo_canyon_player">
+        <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/rScfnaIhd_w?si=cHQ9bJbtCLbcEpsw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+        ></iframe>
+    </div>
+    <button
+            onclick="toggle_player(rough_player)"
+            id="rough_button"
+            class="song_button"
+    >
+        Roughthousing</button>
+    <div class="player" id="rough_player">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eItAZodupYE?si=rhHEf6ejUgEW6WwO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</main>
+</body>
+<script src="./radio.js"></script>
+</html>
