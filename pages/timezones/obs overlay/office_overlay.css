@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  font-size: 22.5pt;
+  font-size: 25pt;
   color: white;
   width: 800px;
   height: 400px;
@@ -10,6 +10,6 @@ body {
   text-align: center;
 }
 .flag {
-  width: 150px;
+  width: 200px;
   -webkit-user-drag: none;
 }
