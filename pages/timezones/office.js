@@ -41,6 +41,6 @@ setInterval(() => {
   print("CurrentTimeCanada", timezoneca);
   print("CurrentTimeLA", timezoneLA);
   print("CurrentTimeParis", timezonefr);
-  print("CurrentTimeBejing", timezoneca);
+  print("CurrentTimeBejing", timezonech);
   print("CurrentTimeNYC", timezoneNY);
 }, 1000);

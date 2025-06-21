@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+  font-size: 22.5pt;
+  color: white;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.flag {
+  width: 150px;
+  -webkit-user-drag: none;
+}
