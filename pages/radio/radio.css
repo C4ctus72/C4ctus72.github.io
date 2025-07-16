@@ -1,6 +1,5 @@
-body {
-    background-color: black;
 
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +24,7 @@ header, main{
     margin-left: 33%;
     color: lime;
     width: 25%;
-    height: 125%;
+    height: 20px;
     background-color: rgba(0, 0, 0, 0);
     margin-bottom: 5px;
 }
@@ -43,7 +42,9 @@ header, main{
 }
 
 html{
-    background-color: #000000;
+    background: black url("https://minecraft.wiki/images/End_Gateway.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     color: #ffffff;
 }

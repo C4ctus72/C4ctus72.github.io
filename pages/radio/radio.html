@@ -25,112 +25,92 @@
         <a href="/pages/radio/radio.html">radio.html</a>
     </nav>
 </header>
-<main id="songlistbuttons">
-    <div>
-        <button onclick="document.getElementById('player').play()" id="play" class="radio_control">
-            > Play <
-        </button>
-        <button onclick="document.getElementById('player').pause()" id="pause" class="radio_control">
-            Pause
-        </button>
-        <button
-                onclick="document.getElementById('player').volume += 0.1"
-                id="volplus"
-                class="radio_control"
-        >
-            Vol +
-        </button>
-        <button
-                onclick="document.getElementById('player').volume -= 0.1"
-                id="volminus"
-                class="radio_control"
-        >
-            Vol -
-        </button>
-    </div>
-    <p>
-        Now playing -
-        <a
-                href="https://www.youtube.com/watch?v=iHEL3iHdu2A"
-                id="playingsong"
-        >Nightlight by Saruky</a
-        >
-    </p>
-    <audio
-            id="player"
-            src="/pages/radio/songs/Nightlight (Menu Music) - FNF_ Hotline 024 (The Medley Update) [ ezmp3.cc ].mp3"
-            loop
-    ></audio>
-</main>
-<main class="song_buttons">
-    <button
-            onclick="toggle_player(jit_player)"
-            id="jit_button"
-            class="song_button"
-    >
-        JIT - 17bucks
-    </button>
-    <div class="player" id="jit_player">
-        <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/ihs3cxzHpIU?si=HqkFJLM8ZOmN-Y1T"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-        ></iframe>
-    </div>
-    <button
-            onclick="toggle_player(shade_player)"
-            id="shade_button"
-            class="song_button"
-    >
-        #13 shade - dedf1sh
-    </button>
-    <div class="player" id="shade_player">
-        <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/gqJ1BQSnLmg?si=meqwd67jOf7L2pGd"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-        ></iframe>
-    </div>
-    <button
-            onclick="toggle_player(octo_canyon_player)"
-            id="octo_canyon_button"
-            class="song_button"
-    >
-        Octo Canyon - Turquoise October
-    </button>
-    <div class="player" id="octo_canyon_player">
-        <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/rScfnaIhd_w?si=cHQ9bJbtCLbcEpsw"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-        ></iframe>
-    </div>
-    <button
-            onclick="toggle_player(rough_player)"
-            id="rough_button"
-            class="song_button"
-    >
-        Roughthousing</button>
-    <div class="player" id="rough_player">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/eItAZodupYE?si=rhHEf6ejUgEW6WwO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+<!--<main id="songlistbuttons">-->
+<!--    <div>-->
+<!--        <button onclick="document.getElementById('player').play()" id="play" class="radio_control">-->
+<!--            > Play <-->
+<!--        </button>-->
+<!--        <button onclick="document.getElementById('player').pause()" id="pause" class="radio_control">-->
+<!--            Pause-->
+<!--        </button>-->
+<!--        <button-->
+<!--                onclick="document.getElementById('player').volume += 0.1"-->
+<!--                id="volplus"-->
+<!--                class="radio_control"-->
+<!--        >-->
+<!--            Vol +-->
+<!--        </button>-->
+<!--        <button-->
+<!--                onclick="document.getElementById('player').volume -= 0.1"-->
+<!--                id="volminus"-->
+<!--                class="radio_control"-->
+<!--        >-->
+<!--            Vol - -->
+<!--        </button>-->
+<!--    </div>-->
+<!--    <p>-->
+<!--        Now playing - -->
+<!--        <a-->
+<!--                href="https://www.youtube.com/watch?v=iHEL3iHdu2A"-->
+<!--                id="playingsong"-->
+<!--        >Nightlight by Saruky</a-->
+<!--        >-->
+<!--    </p>-->
+<!--    <audio-->
+<!--            id="player"-->
+<!--            src="/pages/radio/songs/Nightlight (Menu Music) - FNF_ Hotline 024 (The Medley Update) [ ezmp3.cc ].mp3"-->
+<!--            loop-->
+<!--    ></audio>-->
+<!--</main>-->
+<!--<main class="song_buttons">-->
+<!--    <button-->
+<!--            onclick="toggle_player(jit_player)"-->
+<!--            id="jit_button"-->
+<!--            class="song_button"-->
+<!--    >-->
+<!--        JIT - 17bucks-->
+<!--    </button>-->
+<!--    <div class="player" id="jit_player">-->
+
+<!--    </div>-->
+<!--    <button-->
+<!--            onclick="toggle_player(shade_player)"-->
+<!--            id="shade_button"-->
+<!--            class="song_button"-->
+<!--    >-->
+<!--        #13 shade - dedf1sh-->
+<!--    </button>-->
+<!--    <div class="player" id="shade_player">-->
+
+<!--    </div>-->
+<!--    <button-->
+<!--            onclick="toggle_player(octo_canyon_player)"-->
+<!--            id="octo_canyon_button"-->
+<!--            class="song_button"-->
+<!--    >-->
+<!--        Octo Canyon - Turquoise October-->
+<!--    </button>-->
+<!--    <div class="player" id="octo_canyon_player">-->
+
+<!--    </div>-->
+<!--    <button-->
+<!--            onclick="toggle_player(rough_player)"-->
+<!--            id="rough_button"-->
+<!--            class="song_button"-->
+<!--    >-->
+<!--        Roughthousing</button>-->
+<!--    <div class="player" id="rough_player">-->
+<!--        </div>-->
     <div id="ifra">
-<!-- after midnight-->
+<!--        jit-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ihs3cxzHpIU?si=HqkFJLM8ZOmN-Y1T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--        shade-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gqJ1BQSnLmg?si=meqwd67jOf7L2pGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--        octocanyon-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rScfnaIhd_w?si=cHQ9bJbtCLbcEpsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--        rough-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eItAZodupYE?si=rhHEf6ejUgEW6WwO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- after midnight-->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/pdIRze-_u3Y?si=EF7ff6P6ZS3cm5X_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <!--     meet your lord-->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/uuU-Y8dcoFY?si=hDUnCtDGf9Z-DTVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
