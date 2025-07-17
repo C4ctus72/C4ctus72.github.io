@@ -1,3 +1,7 @@
+html{
+  background-image: url("https://splatoon.nintendo.com/base/_images/gallery/section-hero-splatoon-2-octo-medium-up.webp");
+  background-size: cover;
+}
 nav {
   background-color: black;
   width: 100%;
