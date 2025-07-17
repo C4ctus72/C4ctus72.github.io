@@ -17,13 +17,13 @@ const timezoneca = "America/Toronto";
 const timezoneNY = "America/New_York";
 const timezoneLA = "America/Los_Angeles";
 const timezonefr = "Europe/Paris";
-const timezonech = "Asia/Bejing";
+const timezonech = "Asia/Shanghai";
 //Print 2 screen
 function print(HtmlElement, timezone) {
   document.getElementById(HtmlElement).textContent = DateVar.toLocaleTimeString(
     undefined,
     { timeZone: timezone, ...options }
-  );
+  )
 }
 
 print("CurrentTimeGermany", timezonede);
@@ -31,7 +31,7 @@ print("CurrentTimeJapan", timezonejp);
 print("CurrentTimeCanada", timezoneca);
 print("CurrentTimeLA", timezoneLA);
 print("CurrentTimeParis", timezonefr);
-print("CurrentTimeBejing", timezoneca);
+print("CurrentTimeShanghai", timezonech);
 print("CurrentTimeNYC", timezoneNY);
 
 setInterval(() => {
@@ -41,6 +41,6 @@ setInterval(() => {
   print("CurrentTimeCanada", timezoneca);
   print("CurrentTimeLA", timezoneLA);
   print("CurrentTimeParis", timezonefr);
-  print("CurrentTimeBejing", timezonech);
+  print("CurrentTimeShanghai", timezonech);
   print("CurrentTimeNYC", timezoneNY);
-}, 1000);
+  }, 1000);
