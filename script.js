@@ -27,6 +27,10 @@ function theme() {
   location.replace("/pages/17/17.html");
 }
 
+//######################################################################################################################################################################################
+// Background gif's sources
+//######################################################################################################################################################################################
+
 const bg_gifs = [
     "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGU0MmlmOWNrNWRxaHp5YXhhdWUxd2Q1ZHR6NXBpZTNscDFxaWIwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oSYflamt3IEjm/giphy.gif",
   "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWh3YXNnYmdwd2w2cTA4YWV2eTY2aDR4dWxmb25iMXU4MjFudGUxNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEduOOq2VZhvNfZ6w/giphy.gif",
