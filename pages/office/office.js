@@ -8,12 +8,9 @@ const options = {
   minutes: "2-digit",
   seconds: "2-digit",
 }
-const optionstwo = {
-  hours: "2-digit"
-}
 
-var DateVar = new Date();
-const timezoneClient = Intl.DateTimeFormat().resolvedOptions().timeZone
+let DateVar = new Date();
+// const timezoneClient = Intl.DateTimeFormat().resolvedOptions().timeZone
 const timezonede = "Europe/Berlin";
 const timezonejp = "Asia/Tokyo";
 const timezoneca = "America/Toronto";
@@ -25,11 +22,10 @@ const timezonech = "Asia/Shanghai";
 //Print 2 screen
 function print(HtmlElement, timezone) {
   document.getElementById(HtmlElement).textContent =
-      DateVar.toLocaleTimeString(undefined, { timeZone: timezone, options })
+      DateVar.toLocaleTimeString(undefined, { timeZone: timezone, ...options })
 }
 
 function checkdaylight(timezone, HTMLDay, HTMLNight){
-
   let daytime = document.getElementById(HTMLDay + "-Day");
   let nighttime = document.getElementById(HTMLNight + "-Night");
   let testdate = DateVar.toLocaleTimeString(undefined, {timeZone: timezone, hour:'2-digit', minute:'2-digit', second:'2-digit'});
@@ -43,37 +39,19 @@ function checkdaylight(timezone, HTMLDay, HTMLNight){
     nighttime.style.display = "block";
   }
 }
+// function toggle_Indicator(){
+//   let IndicatorVar = document.getElementsByClassName("User_indicator");
+//   IndicatorVar.style.display = "none";
+//   console.log(IndicatorVar);
+//   if (IndicatorVar.style.display == "block"){
+//     IndicatorVar.style.display = "none";
+//   }
+//   else{
+//     IndicatorVar.style.display = "block";
+//   }
+// }
 
-
-checkdaylight(timezonede, "Germany", "Germany");
-checkdaylight(timezonejp, "Japan", "Japan");
-checkdaylight(timezoneca, "Canada", "Canada");
-checkdaylight(timezoneLA, "Los-Angeles", "Los-Angeles");
-checkdaylight(timezoneNY, "NYC", "NYC");
-checkdaylight(timezonefr, "Paris", "Paris");
-checkdaylight(timezonech, "Shanghai", "Shanghai");
-
-print("CurrentTimeGermany", timezonede);
-print("CurrentTimeJapan", timezonejp);
-print("CurrentTimeCanada", timezoneca);
-print("CurrentTimeLA", timezoneLA);
-print("CurrentTimeParis", timezonefr);
-print("CurrentTimeShanghai", timezonech);
-print("CurrentTimeNYC", timezoneNY);
-
-//print("CurrentTimePhiladelphia",timezoneUTC);
-
-setInterval(() => {
-  DateVar = new Date();
-  print("CurrentTimeGermany", timezonede);
-  print("CurrentTimeJapan", timezonejp);
-  print("CurrentTimeCanada", timezoneca);
-  print("CurrentTimeLA", timezoneLA);
-  print("CurrentTimeParis", timezonefr);
-  print("CurrentTimeShanghai", timezonech);
-  print("CurrentTimeNYC", timezoneNY);
-  //print("CurrentTimePhiladelphia", timezoneUTC);
-
+function checkdaylighteverything() {
   checkdaylight(timezonede, "Germany", "Germany");
   checkdaylight(timezonejp, "Japan", "Japan");
   checkdaylight(timezoneca, "Canada", "Canada");
@@ -81,4 +59,21 @@ setInterval(() => {
   checkdaylight(timezoneNY, "NYC", "NYC");
   checkdaylight(timezonefr, "Paris", "Paris");
   checkdaylight(timezonech, "Shanghai", "Shanghai");
+}
+checkdaylighteverything()
+function printeverything() {
+  print("CurrentTimeGermany", timezonede);
+  print("CurrentTimeJapan", timezonejp);
+  print("CurrentTimeCanada", timezoneca);
+  print("CurrentTimeLA", timezoneLA);
+  print("CurrentTimeParis", timezonefr);
+  print("CurrentTimeShanghai", timezonech);
+  print("CurrentTimeNYC", timezoneNY);
+//print("CurrentTimePhiladelphia",timezoneUTC);
+}
+printeverything()
+setInterval(() => {
+  DateVar = new Date();
+  printeverything()
+  checkdaylighteverything()
   }, 1000);

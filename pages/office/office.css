@@ -12,6 +12,20 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
+main{
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+footer {
+  position: sticky;
+  height: 25px;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 1%;
+
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
 .Time {
   display: flex;
   flex-direction: column;
@@ -24,6 +38,9 @@ a {
 }
 p {
   text-align: center;
+}
+hr{
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 .flag {
   width: 100px;
@@ -44,7 +61,9 @@ svg{
 .NightIndicator{
   color: lightblue;
 }
-
+.User_indicator{
+  display:none
+}
 
 @media screen and (max-width: 500px) {
   header {
