@@ -35,7 +35,15 @@ p {
 .TimeDisplay{
   justify-content: flex-end;
 }
-
+svg{
+  width: 30px;
+}
+.DayIndicator{
+  color: yellow;
+}
+.NightIndicator{
+  color: lightblue;
+}
 
 
 @media screen and (max-width: 500px) {
