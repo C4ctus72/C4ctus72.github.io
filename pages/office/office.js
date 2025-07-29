@@ -12,7 +12,6 @@ const options = {
 
 let DateVar = new Date();
 // const timezoneClient = Intl.DateTimeFormat().resolvedOptions().timeZone
-const UTC = new Date().getUTCHours();
 const timezonede = "Europe/Berlin";
 const timezonejp = "Asia/Tokyo";
 const timezoneca = "America/Toronto";
