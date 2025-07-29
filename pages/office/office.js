@@ -4,6 +4,7 @@ img.draggable = false;
 
 //Time stuff
 const options = {
+  weekday: "short",
   hours: "2-digit",
   minutes: "2-digit",
   seconds: "2-digit",
@@ -11,6 +12,7 @@ const options = {
 
 let DateVar = new Date();
 // const timezoneClient = Intl.DateTimeFormat().resolvedOptions().timeZone
+const UTC = new Date().getUTCHours();
 const timezonede = "Europe/Berlin";
 const timezonejp = "Asia/Tokyo";
 const timezoneca = "America/Toronto";
@@ -18,6 +20,7 @@ const timezoneNY = "America/New_York";
 const timezoneLA = "America/Los_Angeles";
 const timezonefr = "Europe/Paris";
 const timezonech = "Asia/Shanghai";
+const timezoneen = "Europe/London";
 
 //Print 2 screen
 function print(HtmlElement, timezone) {
@@ -59,6 +62,7 @@ function checkdaylighteverything() {
   checkdaylight(timezoneNY, "NYC", "NYC");
   checkdaylight(timezonefr, "Paris", "Paris");
   checkdaylight(timezonech, "Shanghai", "Shanghai");
+  checkdaylight(timezoneen, "London", "London");
 }
 checkdaylighteverything()
 function printeverything() {
@@ -69,6 +73,7 @@ function printeverything() {
   print("CurrentTimeParis", timezonefr);
   print("CurrentTimeShanghai", timezonech);
   print("CurrentTimeNYC", timezoneNY);
+  print("CurrentTimeEngland", timezoneen);
 //print("CurrentTimePhiladelphia",timezoneUTC);
 }
 printeverything()
