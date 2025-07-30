@@ -34,7 +34,7 @@ header, main{
 
 @media only screen and (max-width: 500px) {
     .song_button {
-        margin-left: 0px;
+        margin-left: 0;
         margin-bottom: 5%;
         width: 100%;
         height: 150%;
@@ -42,12 +42,27 @@ header, main{
 }
 
 html{
-    background: black url("https://minecraft.wiki/images/End_Gateway.gif");
-    background-repeat: no-repeat;
+    background: rgb(9 20 31) url("https://minecraft.wiki/images/End_Gateway.gif") no-repeat;
     background-size: cover;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     color: #ffffff;
 }
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px cornflowerblue;
+    margin: 10px;
+    padding: 10px;
+    color : #ffffff;
+}:active{
+    border-color: rgb(9 20 31) ;
+ }
 iframe{
     width: 375px;
     margin: 50px auto;
