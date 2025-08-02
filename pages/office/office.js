@@ -2,6 +2,17 @@
 const img = document.querySelector("img");
 img.draggable = false;
 
+// Settings menu
+let settingsmenu = document.getElementById("settingsmenu");
+settingsmenu.style.display = "none";
+
+function settingsmenuon(x){
+  x.style.display = "block";
+}
+function settingsmenuoff(x){
+  x.style.display = "none";
+}
+
 //Time stuff
 const options = {
   weekday: "short",

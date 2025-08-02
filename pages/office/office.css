@@ -77,7 +77,29 @@ svg{
 .User_indicator{
   display:none
 }
-
+#settingsmenu{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.settings-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#settingsmenu-close{
+  width: 5%;
+  height: 5%;
+  font-size: 1.5em;
+}
 @media screen and (max-width: 500px) {
   header {
     flex-direction: column;
