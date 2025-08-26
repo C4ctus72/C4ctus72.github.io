@@ -10,6 +10,9 @@ const formatterspain = new Intl.RelativeTimeFormat(undefined)
 function formatspain(f){
   f.format()}
 
+const now = new Date();
+const utc = new Date(now.getTime() + now.getTimezoneOffset() * 60000);
+
 function settingsmenuon(x){
   x.style.display = "block";
 }
