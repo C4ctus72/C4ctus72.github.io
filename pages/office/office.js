@@ -6,6 +6,10 @@ img.draggable = false;
 let settingsmenu = document.getElementById("settingsmenu");
 settingsmenu.style.display = "none";
 
+const formatterspain = new Intl.RelativeTimeFormat(undefined)
+function formatspain(f){
+  f.format()}
+
 function settingsmenuon(x){
   x.style.display = "block";
 }
@@ -31,7 +35,7 @@ const timezoneLA = "America/Los_Angeles";
 const timezonefr = "Europe/Paris";
 const timezonech = "Asia/Shanghai";
 const timezoneen = "Europe/London";
-
+const timezonees = "America/Puerto_Rico";
 //Print 2 screen
 function print(HtmlElement, timezone) {
   document.getElementById(HtmlElement).textContent =
@@ -73,6 +77,7 @@ function checkdaylighteverything() {
   checkdaylight(timezonefr, "Paris", "Paris");
   checkdaylight(timezonech, "Shanghai", "Shanghai");
   checkdaylight(timezoneen, "London", "London");
+  checkdaylight(timezonees, "Spain", "Spain");
 }
 checkdaylighteverything()
 function printeverything() {
@@ -84,6 +89,7 @@ function printeverything() {
   print("CurrentTimeShanghai", timezonech);
   print("CurrentTimeNYC", timezoneNY);
   print("CurrentTimeEngland", timezoneen);
+  print("CurrentTimeSpain", timezonees);
 //print("CurrentTimePhiladelphia",timezoneUTC);
 }
 printeverything()
