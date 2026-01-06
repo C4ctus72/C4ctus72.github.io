@@ -1,63 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta name="title" content="RandomSplatoonSongGiver | by Hactus" />
+        <meta
+            name="description"
+            content="A website to generate random Splatoon songs"
+        />
+        <meta name="image" content="../../favicon.jpg" />
+        <meta name="url" content="https://hactuss.github.io/" />
+        <meta name="type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <!--  -->
+        <title>Hac's website | HAJ</title>
+        <link
+            rel="shortcut icon"
+            href="../../img/favicon.jpg"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="../../style/base.css" />
+        <link rel="stylesheet" href="../../style/resize.css" />
+        <link rel="stylesheet" href="randomplayer.css" />
 
-<head>
-    <meta name="title" content="RandomSplatoonSongGiver | by Hactus">
-    <meta name="description" content="A website to generate random Splatoon songs">
-    <meta name="image" content="../../favicon.jpg">
-    <meta name="url" content="https://hactuss.github.io/">
-    <meta name="type" content="website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <!--  -->
-    <title>Hac's website | HAJ</title>
-    <link rel="shortcut icon" href="../../img/favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../../style/base.css">
-    <link rel="stylesheet" href="../../style/resize.css">
-    <link rel="stylesheet" href="randomplayer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <nav>
-        <a href="/index.html" class="nav-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M14 2h-4v2H8v2H6v2H4v2H2v2h2v10h7v-6h2v6h7V12h2v-2h-2V8h-2V6h-2V4h-2zm0 2v2h2v2h2v2h2v2h-2v8h-3v-6H9v6H6v-8H4v-2h2V8h2V6h2V4z"/></svg></a>
-        <a href="../office/office.html" class="nav-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3H5v2H3v14h2v2h14v-2h2V5h-2zm0 2v14H5V5zm-8 2h2v6h4v2h-6z"/></svg></a>
-        <a href="/pages/videos/videos.html" class="nav-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="currentColor" d="M2 5h14v4h2V7h2V5h2v14h-2v-2h-2v-2h-2v4H2zm2 12h10V7H4z"/></svg></a>
-        <a href="/pages/radio/radio.html">radio.html</a>
-    </nav>
-   <main>
-        <h1>♪ RandomSplatoonSongGiver (RELEASE Version 1.1) ♪</h1>
-        <p id="info"><a href="javascript:toggle_message(info)"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3H3v18h18V3zm14 2v14H5V5zm-8 4H9V7H7v2h2v2h2v2H9v2H7v2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2v-2h2V9h2V7h-2v2h-2v2h-2z"/></svg></a>
-            Press 'Refresh' if the song does*nt play. There are only song snippets from inkipedia.org. and there's also a rare chance that it wont play any song, which I dont know how to fix. Feel free to message me on discord if you know something. I'd really apprechate :) Thank you for you visit! 
-        </p>
-        <div class="contianer">
-            <img src="" alt="AlbumCover" id="AlbumCover" draggable="false">
-            <h2 id="SongTitle">Songtitle</h2>
-            <audio src="" id="Audio" allow="autoplay"><source src="" type="mpeg/mp3"></audio>
-            <!-- <div id="progressbar">
+    <body>
+        <nav>
+            <a href="/index.html" class="nav-buttons"
+                ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M14 2h-4v2H8v2H6v2H4v2H2v2h2v10h7v-6h2v6h7V12h2v-2h-2V8h-2V6h-2V4h-2zm0 2v2h2v2h2v2h2v2h-2v8h-3v-6H9v6H6v-8H4v-2h2V8h2V6h2V4z"
+                    /></svg
+            ></a>
+            <a href="../office/office.html" class="nav-buttons"
+                ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        fill="currentColor"
+                        d="M19 3H5v2H3v14h2v2h14v-2h2V5h-2zm0 2v14H5V5zm-8 2h2v6h4v2h-6z"
+                    /></svg
+            ></a>
+        </nav>
+        <main>
+            <h1>
+                ♪ RandomSplatoonSongGiver (RELEASE Version 1.2, last updated
+                06.01.26) ♪
+            </h1>
+            <p id="info">
+                <a href="javascript:toggle_message(info)"
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M5 3H3v18h18V3zm14 2v14H5V5zm-8 4H9V7H7v2h2v2h2v2H9v2H7v2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2v-2h2V9h2V7h-2v2h-2v2h-2z"
+                        /></svg
+                ></a>
+                Press 'Refresh' if the song does*nt play. There are only song
+                snippets from inkipedia.org. and there's also a rare chance that
+                it wont play any song, which I dont know how to fix. Feel free
+                to message me on discord if you know something. I'd really
+                apprechate :) Thank you for you visit!
+            </p>
+            <div class="contianer">
+                <img
+                    src=""
+                    alt="AlbumCover"
+                    id="AlbumCover"
+                    draggable="false"
+                />
+                <h2 id="SongTitle">Songtitle</h2>
+                <audio src="" id="Audio" allow="autoplay">
+                    <source src="" type="mpeg/mp3" />
+                </audio>
+                <!-- <div id="progressbar">
                 <div id="Progress"><p></p></div>
             </div> -->
-            <div id="buttons">
-                <button id="PausePlay" onclick="controlbutton()">Play/Pause</button>
-                <button id="Refresh" onclick="pickrandom()">Refresh</button>
+                <div id="buttons">
+                    <button id="PausePlay" onclick="controlbutton()">
+                        Play/Pause
+                    </button>
+                    <button id="Refresh" onclick="pickrandom()">Refresh</button>
+                </div>
             </div>
-        </div>
-    </main>
-    <main>
-        <p>Background Image, I am not the owner nor the creator of this image:</p>
-        <p> Used in</p> <a href="https://splatoon.nintendo.com/base/en/gallery/">https://splatoon.nintendo.com/base/en/gallery/</a>
-        <p>file</p> <a href="https://splatoon.nintendo.com/base/_images/gallery/section-hero-splatoon-2-octo-medium-up.webp">https://splatoon.nintendo.com/base/_images/gallery/section-hero-splatoon-2-octo-medium-up.webp</a>
-        <p>Icons: <a href="https://pixelarticons.com/">pixelarticons.com</a></p>
-    </main>
-    <main><p>© Hactus 2025 - all rights reserved</p></main>
-</body>
-<script src="randomplayer2.js"></script>
+        </main>
+        <main>
+            <p>I am not the owner nor the creator of the background image:</p>
+            <p>
+                Used in
+                <a href="https://splatoon.nintendo.com/base/en/gallery/"
+                    >https://splatoon.nintendo.com/base/en/gallery/</a
+                >
+            </p>
 
+            <p>
+                file
+                <a
+                    href="https://splatoon.nintendo.com/base/_images/gallery/section-hero-splatoon-2-octo-medium-up.webp"
+                    >https://splatoon.nintendo.com/base/_images/gallery/section-hero-splatoon-2-octo-medium-up.webp</a
+                >
+            </p>
+
+            <p>
+                Icons:
+                <a href="https://pixelarticons.com/">pixelarticons.com</a>
+            </p>
+        </main>
+        <main><p>© Hactus 2025 - all rights reserved</p></main>
+    </body>
+    <script src="randomplayer2.js"></script>
 </html>

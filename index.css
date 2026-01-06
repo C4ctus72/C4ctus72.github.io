@@ -78,9 +78,9 @@ html {
     /*background-repeat: no-repeat;
     background-attachment:fixed;
     background-size:cover;*/
-    background-attachment: fixed;
-    background-color: #101417;
+    background: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGU0MmlmOWNrNWRxaHp5YXhhdWUxd2Q1ZHR6NXBpZTNscDFxaWIwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oSYflamt3IEjm/giphy.gif");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100% 100%;
 }
 main,
@@ -88,6 +88,10 @@ header,
 footer {
     background-color: rgb(0, 0, 0, 0.35);
     border-color: rgb(0, 0, 0, 0.3);
+}
+header {
+    display: flex;
+    flex-direction: row;
 }
 img {
     width: 180px;

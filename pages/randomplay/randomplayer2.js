@@ -263,7 +263,6 @@ function pickrandom(min = 0, max = 24) {
   AudioHTML.src = randomsong.audio;
   AudioHTML.play();
 }
-pickrandom();
 
 // AudioHTML.addEventListener("timeupdate", () =>{
 //     // prg bar 100px
